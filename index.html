@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage 󰆘</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Display time above the greeting message -->
+        <div id="timeContainer">
+            <p id="currentDateTime"></p>
+        </div>
+        <!-- Display date right side of the time -->
+        <div id="dateContainer">
+            <p id="currentDate"></p>
+        </div>
+        <!-- Display greeting message above the cards container -->
+        <div id="greetingContainer">
+            <p id="greetingMessage"></p>
+        </div>
+    </header>
+
+    <main id="container">
+        <div class="sqr">
+            <span>Reddit</span>
+            <div class="content">
+                <a href="https://www.reddit.com/r/unixporn/" target="_blank" rel="noopener noreferrer">Unixporn!</a>
+            </div>
+        </div>
+
+        <div class="sqr">
+            <span>Media</span>
+            <div class="content">
+                <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer">Youtube!</a>
+                <!-- <a href="https://spotify.com/" target="_blank" rel="noopener noreferrer">Spotify!</a> -->
+                <a href="https://aniwave.to/home" target="_blank" rel="noopener noreferrer">Aniwave!</a>
+                <a href="https://mail.google.com/mail/" target="_blank" rel="noopener noreferrer">Gmail!</a>
+            </div>
+        </div>
+
+        <div class="sqr">
+            <span>Programming</span>
+            <div class="content">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub!</a>
+                <a href="https://bard.google.com/" target="_blank" rel="noopener noreferrer">BARD IA!</a>
+            </div>
+        </div>
+
+        <div class="sqr" id="search_sqr">
+            <span>Search</span>
+            <div class="content">
+                <p id="selectedSearchEngineText" class="search-engine-text"></p>
+                <input id="searchinput" autocomplete="on" placeholder="Search the web...">
+            </div>
+        </div>
+    </main>
+
+    <div id="editIcon" onclick="toggleEditMenu()">
+        <img src="assets/edit.png" alt="Edit Icon">
+    </div>
+
+    <div id="editMenu">
+        <a href="https://github.com/rifsxd/my-comfy-homepage/edit/main/index.html" class="editLink" target="_blank"
+            rel="noopener noreferrer">Edit Code</a>
+        <a href="https://github.com/rifsxd/my-comfy-homepage/edit/main/css/style.css" class="editLink" target="_blank"
+            rel="noopener noreferrer">Edit Style</a>
+    </div>
+
+    <script src="js/greetings.js" defer></script>
+    <script src="js/editmenu.js" defer></script>
+    <script src="js/searchengine.js" defer></script>
+</body>
+
+</html>
